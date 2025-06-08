@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout with Semantic Tags</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <style>
+      /* Style for body */
+      body {
+        font-family: Arial;
+        background-color: rgb(245, 242, 242);
+        margin: 0px;
+      }
+      header {
+        display: flex;
+        justify-content: center;
+      }
+      nav {
+        display: flex;
+        justify-content: center;
+        padding: 4px;
+        background-color: rgb(196, 116, 250);
+        margin: 0 20px 0 20px;
+      }
+      nav ul {
+        list-style-type: none;
+        display: flex;
+        gap: 570px;
+      }
+      nav li {
+        display: flex;
+        align-items: center;
+      }
+      nav a {
+        text-decoration: none;
+        color: rgb(54, 54, 54);
+      }
+      nav i {
+        margin-right: 8px;
+      }
+      main {
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 0 20px 0;
+        border: 1px solid rgb(221, 219, 219);
+      }
+      article .aside-left {
+        margin: 30px;
+        background-color: #f1efef;
+        padding: 1px 250px 150px 15px;
+        border-radius: 2%;
+      }
+      article .aside-right {
+        flex: 1;
+        padding: 20px 320px 0 0;
+      }
+      label {
+        font-size: 20px;
+        font-weight: bold;
+      }
+      /* Style for footer */
+      footer {
+        text-align: center;
+      }
+      footer ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding: 0;
+      }
+      footer li {
+        display: flex;
+        align-items: center;
+      }
+      footer ul a {
+        text-decoration: none;
+        color: rgb(54, 54, 54);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>My Simple Website</h1>
+    </header>
+    <!-- Nav menu -->
+    <nav>
+      <ul>
+        <li>
+          <a href="Layout-With-SemanticTags.html"
+            ><i class="fa-solid fa-house-user"></i>Home</a
+          >
+        </li>
+        <li>
+          <a href="Navigate-to-other-page.html"
+            ><i class="fa-solid fa-circle-info"></i>About</a
+          >
+        </li>
+        <li>
+          <a href="Icon-Usage.html"
+            ><i class="fa-solid fa-address-book"></i>Contact</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <!-- Content -->
+    <main>
+      <!-- Left Article -->
+      <article>
+        <aside class="aside-left">
+          <h3>Quick Links</h3>
+          <ul>
+            <li>
+              <a href="#aboutus" style="color: rgb(103, 71, 134)">About Us</a>
+            </li>
+            <li>
+              <a href="#contact" style="color: rgb(103, 71, 134)">Contact</a>
+            </li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+          <label>News</label>
+          <p><b>New!</b> Our Website just launched. Stay tuned for updates.</p>
+        </aside>
+      </article>
+      <!-- Right Article -->
+      <article>
+        <aside class="aside-right">
+          <h2>Welcome to our website</h2>
+          <p>
+            This is home page of our website. Here you can find information
+            about our services and company.
+          </p>
+          <p>
+            Navigate through the menu above to explore different sections of our
+            website.
+          </p>
+          <label>Figure Article</label>
+          <p>
+            Discover how our solutions can help you achieve your goals. We focus
+            on simplicity, quality, and customer sastification.
+          </p>
+          <a href="#readmore" style="color: rgb(103, 71, 134)"
+            >Read More <i class="fa-solid fa-arrow-right"></i
+          ></a>
+        </aside>
+      </article>
+    </main>
+    <!-- footer -->
+    <footer>
+      <ul>
+        <li>
+          <a href="Layout-With-SemanticTags.html"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a href="Navigate-to-other-page.html"
+            >About</a
+          >
+        </li>
+        <li>
+          <a href="Icon-Usage.html"
+            >Contact</a
+          >
+        </li>
+      </ul>
+      <p>
+        Contact us:
+        <a href="mailto:info@mysimplewebsite.com">info@mysimplewebsite.com</a> |
+        <a href="tel:855187126699">(+855) 18 712 6699</a>
+      </p>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3908.631404683705!2d104.89921187452715!3d11.578259843893385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310951e96d257a6f%3A0x6b66703c5fc0c7cc!2sScience%20and%20Technology%20Advanced%20Development%20Co.%2C%20Ltd.!5e0!3m2!1sen!2skh!4v1749274986589!5m2!1sen!2skh"
+        width="280"
+        height="150"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+      <p>&copy; 2025 Simple Website. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

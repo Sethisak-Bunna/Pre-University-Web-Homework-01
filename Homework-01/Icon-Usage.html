@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Icon Usage</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <style>
+      /* Style for body */
+      body {
+        font-family: Arial;
+        background-color: rgb(245, 242, 242);
+        margin: 0px;
+      }
+      header {
+        display: flex;
+        justify-content: center;
+      }
+      nav {
+        display: flex;
+        justify-content: center;
+        padding: 4px;
+        background-color: rgb(196, 116, 250);
+        margin: 0 20px 0 20px;
+      }
+      nav ul {
+        list-style-type: none;
+        display: flex;
+        gap: 570px;
+      }
+      nav li {
+        display: flex;
+        align-items: center;
+      }
+      nav a {
+        text-decoration: none;
+        color: rgb(54, 54, 54);
+      }
+      nav i {
+        margin-right: 8px;
+      }
+      main {
+        display: flex;
+        justify-content: center;
+        background-color: white;
+        margin: 20px 0 20px 0;
+        padding: 40px;
+        border: 1px solid rgb(221, 219, 219);
+      }
+      article {
+        background-color: pink;
+        padding: 20px;
+      }
+      address {
+        font-style: normal;
+      }
+      ul {
+        list-style-type: none;
+      }
+      ul li {
+        display: flex;
+        gap: 20px;
+        padding: 5px;
+      }
+      h3 {
+        font-size: 24px;
+      }
+      /* Style for footer */
+      footer {
+        text-align: center;
+      }
+      footer ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding: 0;
+      }
+      footer li {
+        display: flex;
+        align-items: center;
+      }
+      footer ul a {
+        text-decoration: none;
+        color: rgb(54, 54, 54);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>My Simple Website</h1>
+    </header>
+    <!-- Nav menu -->
+    <nav>
+      <ul>
+        <li>
+          <a href="Layout-With-SemanticTags.html"
+            ><i class="fa-solid fa-house-user"></i>Home</a
+          >
+        </li>
+        <li>
+          <a href="Navigate-to-other-page.html"
+            ><i class="fa-solid fa-circle-info"></i>About</a
+          >
+        </li>
+        <li>
+          <a href="Icon-Usage.html"
+            ><i class="fa-solid fa-address-book"></i>Contact</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <article>
+        <h2>Contact Us</h2>
+        <p>
+          Get in touch with us using the information below. We'd love to hear
+          from you!
+        </p>
+        <address>
+          <ul>
+            <li>
+              <i class="fa-solid fa-envelope"></i> Email: contact@example.com
+            </li>
+            <li><i class="fa-solid fa-phone"></i> Phone: (+855) 18 712 6699</li>
+            <li>
+              <i class="fa-solid fa-location-dot"></i> Address: 123 Main Street,
+              City, Country
+            </li>
+            <li>
+              <i class="fa-solid fa-clock"></i> Hours: Monday - Friday, 9:00 AM
+              - 5:00 PM
+            </li>
+          </ul>
+        </address>
+        <h3>Send us a Message</h3>
+        <label for="name">Name:</label><br />
+        <input type="text" name="name" id="name" /><br /><br />
+        <label for="Email">Email:</label><br />
+        <input type="email" name="email" id="email" /><br /><br />
+        <label for="message">Message:</label><br />
+        <input
+          type="text"
+          name="message"
+          id="message"
+          style="height: 80px"
+        /><br /><br />
+        <input
+          type="submit"
+          value="Send Message"
+          style="
+            color: white;
+            background-color: rgb(80, 142, 241);
+            border: none;
+            padding: 5px;
+          "
+        />
+      </article>
+    </main>
+    <!-- footer -->
+    <footer>
+      <ul>
+        <li>
+          <a href="Layout-With-SemanticTags.html"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a href="Navigate-to-other-page.html"
+            >About</a
+          >
+        </li>
+        <li>
+          <a href="Icon-Usage.html"
+            >Contact</a
+          >
+        </li>
+      </ul>
+      <p>
+        Contact us:
+        <a href="mailto:info@mysimplewebsite.com">info@mysimplewebsite.com</a> |
+        <a href="tel:855187126699">(+855) 18 712 6699</a>
+      </p>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3908.631404683705!2d104.89921187452715!3d11.578259843893385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310951e96d257a6f%3A0x6b66703c5fc0c7cc!2sScience%20and%20Technology%20Advanced%20Development%20Co.%2C%20Ltd.!5e0!3m2!1sen!2skh!4v1749274986589!5m2!1sen!2skh"
+        width="280"
+        height="150"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+      <p>&copy; 2025 Simple Website. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
